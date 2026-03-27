@@ -1,0 +1,13 @@
+//
+// Created by student on 27.03.2026.
+//
+
+#ifndef CPPCOURSEEXCERCISES_USERINTERFACE_HPP
+#define CPPCOURSEEXCERCISES_USERINTERFACE_HPP
+
+
+class UserInterface {
+};
+
+
+#endif //CPPCOURSEEXCERCISES_USERINTERFACE_HPP
