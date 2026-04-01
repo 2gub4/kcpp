@@ -7,4 +7,5 @@ add_executable(CppCourseExcercises src/main.cpp
         src/interface/UserInterface.cpp
         include/interface/UserInterface.hpp
         src/excercisesContainer/ExcercisesContainer.cpp
-        include/excercisesContainer/ExcercisesContainer.hpp)
+        include/excercisesContainer/ExcercisesContainer.hpp
+)
