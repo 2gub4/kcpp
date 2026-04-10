@@ -30,6 +30,7 @@ class Car {
 class OwnedCar : public Car {
     public:
         OwnedCar();
+        OwnedCar(std::string brand, std::string model,std::string license_plate);
         OwnedCar(std::string brand, std::string model, int year, int doors, std::string license_plate, int years_owned, int mileage);
 
         ~OwnedCar();

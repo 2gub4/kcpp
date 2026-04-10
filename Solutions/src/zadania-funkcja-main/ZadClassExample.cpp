@@ -8,11 +8,22 @@ int Car::car_instances = 0;
 long Car::fake_vin = 100000000;
 const float OwnedCar::mile_multiplier = 1.609333;
 
-Car::Car() : cars_model(" "), year_of_production(2026), number_of_door(3), VIN("123456789") { ++car_instances; ++fake_vin; VIN = set_vin(); }
+Car::Car() :
+    cars_model("unknown"),
+    year_of_production(2026),
+    number_of_door(3)
+{
+    ++car_instances;
+    ++fake_vin;
+    VIN = set_vin();
+}
+
+
 Car::Car(std::string brand) : year_of_production(0), number_of_door(0), VIN("123456789") { brand_name = brand; ++car_instances; ++fake_vin; VIN = set_vin();}
 Car::Car(std::string brand, std::string model) : year_of_production(0), number_of_door(0) { brand_name = brand; cars_model = model; ++car_instances; ++fake_vin; VIN = set_vin();}
 
 OwnedCar::OwnedCar() : years_owned(0), mileage(0) { ++car_instances; }
+
 
 Car::~Car() = default;
 OwnedCar::~OwnedCar() = default;
