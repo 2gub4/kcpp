@@ -18,6 +18,7 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadCharExample();
     std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << main_separator << "\n" << std::endl;
     return 0;
 }
