@@ -16,6 +16,7 @@ Car::Car() : brand_name("unknown"), cars_model("01"), year_of_production(current
 {
     ++car_instances;
     VIN = set_vin(fake_vin + car_instances);
+    std::cout << "***Car instance created***\n";
 }
 
 Car::Car(std::string brand) :
@@ -26,6 +27,8 @@ Car::Car(std::string brand) :
     brand_name = brand;
     VIN = set_vin(fake_vin + car_instances);
 }
+
+Car::~Car() { std::cout << "***Car instance destroyed***\n"; }
 
 Car::Car(std::string brand, std::string model) :
     year_of_production(currentYear)
@@ -105,7 +108,8 @@ std::string OwnedCar::to_string() {
     );
 }
 
-void runZadClassExample() {Car car1 = Car("Toyota");
+void runZadClassExample() {
+    Car car1 = Car("Toyota");
     Car car2 = Car();
     Car car3 = Car();
     Car car4 = Car();
@@ -116,10 +120,14 @@ void runZadClassExample() {Car car1 = Car("Toyota");
     Car car9 = Car();
 
     car1.cars_model = "Yaris";
-    std::cout << "[First car: " << car1.to_string() << "]\n\n";
+    std::cout << "\n[First car: " << car1.to_string() << "]\n\n";
     std::cout << "Another 8 instances created...\n";
     std::cout << "Number of cars: " << Car::get_number_of_cars() << "\n\n";
     std::cout << "(fake) VIN of car8: " << car8.get_vin_number() << "\n\n";
+
+    Car *car10 = new Car();
+    std::cout << "(car created on heap using 'new' keyword) Car 10's VIN number: " << car10->get_vin_number() << "\n\n";
+
 
     OwnedCar my_car("Ford", "Mustang", "PO 12345");
     my_car.set_owner("Jan Kowalski");
@@ -131,6 +139,6 @@ void runZadClassExample() {Car car1 = Car("Toyota");
     random_car.set_owner("Anna Nowak");
     std::cout << "[Owned Car 2:\n" << random_car.to_string() << "]\n\n";
     OwnedCar car12;
-    std::cout << "Total number of cars (Car + OwnedCar): " << Car::get_number_of_cars() << std::endl;
+    std::cout << "Total number of cars (Car + OwnedCar): " << Car::get_number_of_cars() << "\n" << std::endl;
 }
 

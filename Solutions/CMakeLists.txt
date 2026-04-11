@@ -7,12 +7,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(HEADERS
         include/zadania-funkcja-main/ZadEnumExample.hpp
         include/zadania-funkcja-main/ZadClassExample.hpp
+        include/zadania-w-trakcie-zajec/ZadStringExample.hpp
+        include/zadania-funkcja-main/ZadCharExample.hpp
 )
 
 set(SOURCES
         src/main.cpp
         src/zadania-funkcja-main/ZadEnumExample.cpp
         src/zadania-funkcja-main/ZadClassExample.cpp
+        src/zadania-w-trakcie-zajec/ZadStringExample/ZadStringExample.cpp
+        src/zadania-w-trakcie-zajec/ZadStringExample/runZadStringExample.cpp
+        src/zadania-funkcja-main/ZadCharExample.cpp
 )
 
 add_executable(Solutions ${SOURCES} ${HEADERS})

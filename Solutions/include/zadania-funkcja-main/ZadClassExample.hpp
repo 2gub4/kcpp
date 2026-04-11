@@ -4,6 +4,7 @@
 class Car {
     public:
         Car();
+        ~Car();
         Car(std::string brand);
         Car(std::string brand, std::string model);
         Car(std::string brand, std::string model, int procuction_year);
