@@ -140,5 +140,7 @@ void runZadClassExample() {
     std::cout << "[Owned Car 2:\n" << random_car.to_string() << "]\n\n";
     OwnedCar car12;
     std::cout << "Total number of cars (Car + OwnedCar): " << Car::get_number_of_cars() << "\n" << std::endl;
+
+    delete car10;
 }
 
