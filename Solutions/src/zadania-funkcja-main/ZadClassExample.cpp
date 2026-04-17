@@ -128,7 +128,6 @@ void runZadClassExample() {
     Car *car10 = new Car();
     std::cout << "(car created on heap using 'new' keyword) Car 10's VIN number: " << car10->get_vin_number() << "\n\n";
 
-
     OwnedCar my_car("Ford", "Mustang", "PO 12345");
     my_car.set_owner("Jan Kowalski");
     my_car.mileage = 15000;
