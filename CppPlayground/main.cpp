@@ -14,6 +14,13 @@ int main() {
         <<std::endl;
         std::cin>>choice;
         std::cout<<"Entering option "<<choice<<"\n\n"<<std::endl;
+        switch (choice) {
+            case 1: 
+                std::cout<<"Zadanie1 dsohsdvnsdoisbdbzd"<<std::endl;
+                break;
+            case 2: 
+            std::cout<<"Zadanie2 dvsdahvishvbskjdvbsdvhotjhn"<<std::endl;
+        }
     } while (choice != 0);
     std::cout<<"Exiting program..."<<std::endl;
 }
