@@ -11,6 +11,8 @@ set(HEADERS
         include/zadania-w-trakcie-zajec/ZadStringExample.hpp
         include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp
+        include/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp
+        include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus/ZadPrzeciazaniePlus.hpp
 )
 
 set(SOURCES
@@ -23,6 +25,8 @@ set(SOURCES
         src/zadania-w-trakcie-zajec/ZadStringExample/runZadStringExample.cpp
         src/zadania-zwracanie-przez-funkcje/ZadZwracanie.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazeniePole.cpp
+        src/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.cpp
+        src/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.cpp
 )
 
 

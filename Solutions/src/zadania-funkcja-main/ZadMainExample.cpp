@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 
 const std::string main_separator = std::string(90, '=');

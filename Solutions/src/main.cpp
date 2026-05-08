@@ -5,6 +5,8 @@
 #include "zadania-w-trakcie-zajec/ZadStringExample.hpp"
 #include "zadania-funkcja-main/ZadCharExample.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp"
+#include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp"
+#include "zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp"
 
 const std::string main_separator = std::string(90, '=');
 const std::string separator = std::string(90, '-');
@@ -20,6 +22,14 @@ int main() {
     runZadCharExample();
     std::cout << "\n" << separator << std::endl;
     runZadZwracanie();
+    std::cout << "\n" << separator << std::endl;
+    runZadPrzeciazeniePole();
+    std::cout << "\n" << separator << std::endl;
+    runZadPrzeciazenieDodaj();
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
     std::cout << "\n" << main_separator << "\n" << std::endl;
     return 0;
