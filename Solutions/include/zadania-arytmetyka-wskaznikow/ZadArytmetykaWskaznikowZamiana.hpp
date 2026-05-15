@@ -2,7 +2,8 @@
 // Created by Jakub on 15.05.2026.
 //
 
-#ifndef SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZAMIANA_HPP
-#define SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZAMIANA_HPP
+#pragma once
 
-#endif //SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZAMIANA_HPP
+void zamien(int* a, int* b);
+
+void runZadArytmetykaWskaznokowZamiana();

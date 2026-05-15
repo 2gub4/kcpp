@@ -2,13 +2,19 @@
 
 #include "zadania-funkcja-main/ZadEnumExample.hpp"
 #include "zadania-funkcja-main/ZadClassExample.hpp"
-#include "zadania-w-trakcie-zajec/ZadStringExample.hpp"
 #include "zadania-funkcja-main/ZadCharExample.hpp"
+
+#include "zadania-w-trakcie-zajec/ZadStringExample.hpp"
+
 #include "zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp"
 #include "zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.hpp"
+
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZamiana.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowSuma.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -32,6 +38,12 @@ int main() {
     runZadPrzeciazaniePlus();
     std::cout << "\n" << separator << std::endl;
     runLPrzeciazaniePotega();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznokowZamiana();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikowSuma();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikowZnajdowanie();
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;

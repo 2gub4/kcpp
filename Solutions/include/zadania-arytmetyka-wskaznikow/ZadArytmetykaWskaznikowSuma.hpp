@@ -2,7 +2,9 @@
 // Created by Jakub on 15.05.2026.
 //
 
-#ifndef SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWSUMA_HPP
-#define SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWSUMA_HPP
+#pragma once
+#include <string>
 
-#endif //SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWSUMA_HPP
+int suma(const int* arr, int size);
+
+void runZadArytmetykaWskaznikowSuma();

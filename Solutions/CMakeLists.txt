@@ -14,6 +14,11 @@ set(HEADERS
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp
         include/zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZamiana.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowSuma.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.hpp
+        include/zadania-arytmetyka-wskaznikow/displayArray.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowPrzesuniecie.hpp
 )
 
 set(SOURCES
@@ -29,6 +34,11 @@ set(SOURCES
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.cpp
         src/zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznokowZamiana.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowSuma.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.cpp
+        src/zadania-arytmetyka-wskaznikow/displayArray.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowPrzesuniecie.cpp
 )
 
 

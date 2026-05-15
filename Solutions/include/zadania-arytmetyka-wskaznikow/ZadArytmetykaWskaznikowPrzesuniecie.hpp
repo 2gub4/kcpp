@@ -2,7 +2,8 @@
 // Created by Jakub on 15.05.2026.
 //
 
-#ifndef SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWPRZESUNIECIE_HPP
-#define SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWPRZESUNIECIE_HPP
+#pragma once
 
-#endif //SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWPRZESUNIECIE_HPP
+void przesun(int* array, int arraySize);
+
+void runZadArytmetykaWskaznikowPrzesuniecie();

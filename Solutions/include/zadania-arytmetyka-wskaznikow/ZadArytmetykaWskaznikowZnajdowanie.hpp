@@ -2,7 +2,8 @@
 // Created by Jakub on 15.05.2026.
 //
 
-#ifndef SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZNAJDOWANIE_HPP
-#define SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZNAJDOWANIE_HPP
+#pragma once
 
-#endif //SOLUTIONS_ZADARYTMETYKAWSKAZNIKOWZNAJDOWANIE_HPP
+int* maxElement(int* array, int arraySize);
+
+void runZadArytmetykaWskaznikowZnajdowanie();

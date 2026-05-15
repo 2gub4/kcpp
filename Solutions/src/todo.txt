@@ -1,5 +1,0 @@
-1. w zadaniu 2.1 (ZadZwracanie) dokończyć/zrobić podpunkt 4
-2. pozbyć się includeów w niektórych headerach
-3. dokończyć w 2.4 runZadPrzeciazaniePlus.cpp
-4. zrobić 2.5
-
