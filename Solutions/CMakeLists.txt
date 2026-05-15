@@ -12,7 +12,7 @@ set(HEADERS
         include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp
-        include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus/ZadPrzeciazaniePlus.hpp
+        include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp
 )
 
 set(SOURCES
