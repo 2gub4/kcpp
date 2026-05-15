@@ -13,6 +13,7 @@ set(HEADERS
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp
+        include/zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.hpp
 )
 
 set(SOURCES
@@ -27,6 +28,7 @@ set(SOURCES
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazeniePole.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.cpp
+        src/zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.cpp
 )
 
 

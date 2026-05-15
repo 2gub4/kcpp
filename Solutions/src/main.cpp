@@ -8,6 +8,7 @@
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp"
+#include "zadania-zwracanie-przez-funkcje/LPrzeciazaniePotega.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -29,6 +30,12 @@ int main() {
     runZadPrzeciazenieDodaj();
     std::cout << "\n" << separator << std::endl;
     runZadPrzeciazaniePlus();
+    std::cout << "\n" << separator << std::endl;
+    runLPrzeciazaniePotega();
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
