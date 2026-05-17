@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowPrzesuniecie.hpp"
 #include "zadania-funkcja-main/ZadEnumExample.hpp"
 #include "zadania-funkcja-main/ZadClassExample.hpp"
 #include "zadania-funkcja-main/ZadCharExample.hpp"
@@ -15,6 +16,9 @@
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZamiana.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowSuma.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowRoznica.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowKopiowanie.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -44,6 +48,16 @@ int main() {
     runZadArytmetykaWskaznikowSuma();
     std::cout << "\n" << separator << std::endl;
     runZadArytmetykaWskaznikowZnajdowanie();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikowPrzesuniecie();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikowRoznica();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikowKopiowanie();
+    std::cout << "\n" << separator << std::endl;
+    runZadAdresowaniePamieci();
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;

@@ -19,6 +19,9 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.hpp
         include/zadania-arytmetyka-wskaznikow/displayArray.hpp
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowPrzesuniecie.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowRoznica.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowKopiowanie.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.hpp
 )
 
 set(SOURCES
@@ -39,6 +42,9 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowZnajdowanie.cpp
         src/zadania-arytmetyka-wskaznikow/displayArray.cpp
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowPrzesuniecie.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowRoznica.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowKopiowanie.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.cpp
 )
 
 
