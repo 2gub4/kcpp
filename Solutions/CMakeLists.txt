@@ -24,6 +24,7 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.hpp
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceA.hpp
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp
 )
 
 set(SOURCES
@@ -49,6 +50,7 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.cpp
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceA.cpp
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.cpp
 )
 
 

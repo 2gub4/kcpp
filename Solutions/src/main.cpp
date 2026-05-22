@@ -21,6 +21,7 @@
 #include "zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceA.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -61,9 +62,10 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadArytmetykaWskaznikowTabliceA();
     std::cout << "\n" << separator << std::endl;
-    runZadArytmetykaWskaznikowTabliceB();
+    std::cout << "*runZadArytmetykaWskaznikowTabliceB() here*";
+    //runZadArytmetykaWskaznikowTabliceB();
     std::cout << "\n" << separator << std::endl;
-
+    runZadArytmetykaWskaznikowTablica2D();
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
