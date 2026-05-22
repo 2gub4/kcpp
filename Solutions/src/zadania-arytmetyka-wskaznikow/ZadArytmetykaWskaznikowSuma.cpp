@@ -17,7 +17,7 @@ int suma(const int* arr, const int size) {
 
 void runZadArytmetykaWskaznikowSuma()
 {
-    int arrSize = 13;
-    int array[] = {15,-3,7,24,0,1,-4,11,-5,10,-1,2,10};
+    constexpr int arrSize = 13;
+    constexpr int array[] = {15,-3,7,24,0,1,-4,11,-5,10,-1,2,10};
     std::cout << "Sum of elements of array[13] = " << displayArray(array, arrSize) << " equals to: " << suma(array, arrSize) << std::endl;
 }
