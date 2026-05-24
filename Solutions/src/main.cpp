@@ -24,6 +24,7 @@
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadOperatoryPzypisania.hpp"
+#include "zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -73,7 +74,7 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadOperatoryPzypisania();
     std::cout << "\n" << separator << std::endl;
-
+    runLBitoweOperatoryLogiczneSingleVariable();
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
