@@ -20,9 +20,10 @@
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowKopiowanie.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadAdresowaniePamieci.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceA.hpp"
-#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp"
+//#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadOperatoryPzypisania.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -70,7 +71,7 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadArytmetykaWskaznikow();
     std::cout << "\n" << separator << std::endl;
-
+    runZadOperatoryPzypisania();
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;

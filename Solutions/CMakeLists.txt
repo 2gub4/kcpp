@@ -26,6 +26,7 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.hpp
+        include/zadania-arytmetyka-wskaznikow/ZadOperatoryPzypisania.hpp
 )
 
 set(SOURCES
@@ -53,6 +54,7 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.cpp
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.cpp
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.cpp
+        src/zadania-arytmetyka-wskaznikow/ZadOperatoryPrzypisania.cpp
 )
 
 
