@@ -22,6 +22,7 @@
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceA.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTabliceB.hpp"
 #include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikowTablica2D.hpp"
+#include "zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -66,6 +67,14 @@ int main() {
     //runZadArytmetykaWskaznikowTabliceB();
     std::cout << "\n" << separator << std::endl;
     runZadArytmetykaWskaznikowTablica2D();
+    std::cout << "\n" << separator << std::endl;
+    runZadArytmetykaWskaznikow();
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
