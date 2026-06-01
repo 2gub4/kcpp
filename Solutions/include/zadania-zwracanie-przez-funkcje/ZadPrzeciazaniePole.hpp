@@ -1,7 +1,5 @@
 #pragma once
 
-#include <iostream>
-
 inline void pole() { std::cout << "Area of the function\n" << std::endl; }
 
 int pole(int sideLength);

@@ -4,7 +4,6 @@
 
 #pragma once
 
-
 class Punkt {
     public:
         int x;
@@ -12,6 +11,5 @@ class Punkt {
         Punkt(int x, int y);
         void operator+(Punkt other);
 };
-
 
 void runZadPrzeciazaniePlus();

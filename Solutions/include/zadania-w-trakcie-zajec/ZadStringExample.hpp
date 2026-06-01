@@ -1,8 +1,5 @@
 #pragma once
 
-#include <string>
-#include <utility>
-
 /* Zadanie podczas zajec
  *   Napisz funkcje (osobny program) w ktorym zadeklarujesz string i uzyjesz
  * na nim funkcji manipulacyjnych:

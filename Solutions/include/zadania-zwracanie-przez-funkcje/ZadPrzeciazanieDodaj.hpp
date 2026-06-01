@@ -4,8 +4,6 @@
 
 #pragma once
 
-#include <string>
-
 int dodaj(int a, int b);
 
 double dodaj(float a, float b);

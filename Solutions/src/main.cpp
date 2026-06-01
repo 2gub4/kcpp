@@ -7,6 +7,7 @@
 
 #include "zadania-w-trakcie-zajec/ZadStringExample.hpp"
 
+//#include "zadania-zwracanie-przez-funkcje/ZadPrzekazywanie.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp"
 #include "zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp"

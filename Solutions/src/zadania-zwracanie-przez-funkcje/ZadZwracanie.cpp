@@ -1,42 +1,41 @@
 #include <iostream>
+#include "zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp"
 
-void swap_by_value(int a, int b) {
-    int temp = a;
-    a = b;
-    b = temp;
-    std::cout << "(inside function swap_by_value) A = " << a << ", B = " << b << std::endl;
+int return_by_value() {
+    constexpr int value = 10;
+    return value;
 }
 
-void swap_by_reference(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-    std::cout << "(inside function swap_by_reference) A = " << a << ", B = " << b << std::endl;
+int& return_by_reference() {
+    static int value = 20;
+    return value;
 }
 
-void swap_by_pointer(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-    std::cout << "(inside function swap_by_pointer) A = " << *a << ", B = " << *b << std::endl;
+int* return_by_pointer() {
+    static int value = 30;
+    return &value;
 }
 
+int* return_array() {
+    static int arr[6] = {10, 20, 30, 40, 50, 60};
+    return arr;
+}
 
 void runZadZwracanie() {
-    int a = 0;
-    int b = 123;
-    std::cout << "(initially) A = " << a << ", B = " << b << std::endl;
-    swap_by_value(a, b);
-    std::cout << "(after function swap_by_value) A = " << a << ", B = " << b << "\n" << std::endl;
-    std::cout << "(initially) A = " << a << ", B = " << b << std::endl;
-    swap_by_reference(a, b);
-    std::cout << "(after function swap_by_reference) A = " << a << ", B = " << b << "\n" << std::endl;
-    std::cout << "(initially) A = " << a << ", B = " << b << std::endl;
-    int* pointA = &a;
-    int* pointB = &b;
-    swap_by_pointer(pointA, pointB);
-    std::cout << "(after function swap_by_pointer) A = " << a << ", B = " << b << "\n" << std::endl;
-    std::cout << "(initially) A = " << a << ", B = " << b << std::endl;
-    swap_by_pointer(&a, &b);
-    std::cout << "(after function swap_by_pointer with adresses as parameters) A = " << a << ", B = " << b << "\n" << std::endl;
+    int val = 0;
+    std::cout << "(initially) val = " << val;
+    val = return_by_value();
+    std::cout << "\n(after function return_by_value) val = " << val << "\n";
+    std::cout << "(initially) return_by_reference() = " << return_by_reference() << "\n";
+    int& ref = return_by_reference();
+    ref = 999;
+    std::cout << "(after function return_by_reference and modifying reference) return_by_reference() = " << return_by_reference() << "\n";
+    const int* ptr = nullptr;
+    std::cout << "(initially) ptr address = " << ptr << "\n";
+    ptr = return_by_pointer();
+    std::cout << "(after function return_by_pointer) ptr value = " << *ptr << " (address: " << ptr << ")\n";
+    const int* arr = nullptr;
+    std::cout << "(initially) arr address = " << arr << "\n";
+    arr = return_array();
+    std::cout << "(after function return_array) arr[0] = " << arr[0] << ", arr[1] = " << arr[1] << ", arr[2] = " << arr[2] << std::endl;
 }

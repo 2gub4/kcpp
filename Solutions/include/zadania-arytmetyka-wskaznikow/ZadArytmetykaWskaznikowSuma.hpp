@@ -3,7 +3,6 @@
 //
 
 #pragma once
-#include <string>
 
 int suma(const int* arr, int size);
 

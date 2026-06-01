@@ -9,7 +9,7 @@ set(HEADERS
         include/zadania-funkcja-main/ZadClassExample.hpp
         include/zadania-funkcja-main/ZadCharExample.hpp
         include/zadania-w-trakcie-zajec/ZadStringExample.hpp
-        include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
+        include/zadania-zwracanie-przez-funkcje/ZadPrzekazywanie.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePole.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.hpp
         include/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.hpp
@@ -28,6 +28,7 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.hpp
         include/zadania-arytmetyka-wskaznikow/ZadOperatoryPzypisania.hpp
         include/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.hpp
+        include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
 )
 
 set(SOURCES
@@ -38,7 +39,7 @@ set(SOURCES
 
         src/zadania-w-trakcie-zajec/ZadStringExample/ZadStringExample.cpp
         src/zadania-w-trakcie-zajec/ZadStringExample/runZadStringExample.cpp
-        src/zadania-zwracanie-przez-funkcje/ZadZwracanie.cpp
+        src/zadania-zwracanie-przez-funkcje/ZadPrzekazywanie.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazeniePole.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazanieDodaj.cpp
         src/zadania-zwracanie-przez-funkcje/ZadPrzeciazaniePlus.cpp
@@ -57,6 +58,7 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/ZadArytmetykaWskaznikow.cpp
         src/zadania-arytmetyka-wskaznikow/ZadOperatoryPrzypisania.cpp
         src/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.cpp
+        src/zadania-zwracanie-przez-funkcje/ZadZwracanie.cpp
 )
 
 
