@@ -29,6 +29,7 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/ZadOperatoryPzypisania.hpp
         include/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.hpp
         include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
+        include/zadania-operacje-wejscia-wyjscia/LStringStream.hpp
 )
 
 set(SOURCES
@@ -59,6 +60,7 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/ZadOperatoryPrzypisania.cpp
         src/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.cpp
         src/zadania-zwracanie-przez-funkcje/ZadZwracanie.cpp
+        src/zadania-operacje-wejscia-wyjscia/LStringStream.cpp
 )
 
 
