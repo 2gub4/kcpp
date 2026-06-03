@@ -30,6 +30,9 @@ set(HEADERS
         include/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.hpp
         include/zadania-zwracanie-przez-funkcje/ZadZwracanie.hpp
         include/zadania-operacje-wejscia-wyjscia/LStringStream.hpp
+        include/zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemCout.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadCandCPP.hpp
 )
 
 set(SOURCES
@@ -61,6 +64,9 @@ set(SOURCES
         src/zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.cpp
         src/zadania-zwracanie-przez-funkcje/ZadZwracanie.cpp
         src/zadania-operacje-wejscia-wyjscia/LStringStream.cpp
+        src/zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemWyjscia.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadCandCPP.cpp
 )
 
 

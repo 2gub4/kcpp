@@ -28,6 +28,9 @@
 #include "zadania-arytmetyka-wskaznikow/LBitoweOperatoryLogiczneSingleVariable.hpp"
 
 #include "zadania-operacje-wejscia-wyjscia/LStringStream.hpp"
+#include "zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemCout.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadCandCPP.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -80,6 +83,14 @@ int main() {
     runLBitoweOperatoryLogiczneSingleVariable();
     std::cout << "\n" << separator << std::endl;
     runLStringStream();
+    std::cout << "\n" << separator << std::endl;
+    runLManipulacjaStrumieniemCout();
+    std::cout << "\n" << separator << std::endl;
+    runZadCinCoutFile();
+    std::cout << "\n" << separator << std::endl;
+    runZadCandCPP();
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
