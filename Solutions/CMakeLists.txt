@@ -33,6 +33,13 @@ set(HEADERS
         include/zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemCout.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadCandCPP.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadTabelaFormat.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadTemperaturaFormat.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadDaneNaukoweFormat.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadParzysta.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadParzystaCase.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadPetle.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadSwitch.hpp
 )
 
 set(SOURCES
@@ -67,6 +74,13 @@ set(SOURCES
         src/zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemWyjscia.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadCandCPP.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadTabelaFormat.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadTemperaturaFormat.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadDaneNaukoweFormat.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadParzysta.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadParzystaCase.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadPetle.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadSwitch.cpp
 )
 
 

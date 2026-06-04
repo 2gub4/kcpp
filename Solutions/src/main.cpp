@@ -30,7 +30,14 @@
 #include "zadania-operacje-wejscia-wyjscia/LStringStream.hpp"
 #include "zadania-operacje-wejscia-wyjscia/LManipulacjaStrumieniemCout.hpp"
 #include "zadania-operacje-wejscia-wyjscia/ZadCinCoutFile.hpp"
-#include "zadania-operacje-wejscia-wyjscia/ZadCandCPP.hpp"
+//#include "zadania-operacje-wejscia-wyjscia/ZadCandCPP.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadTabelaFormat.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadTemperaturaFormat.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadDaneNaukoweFormat.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadParzysta.hpp"
+//#include "zadania-operacje-wejscia-wyjscia/ZadParzystaCase.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadPetle.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadSwitch.hpp"
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -88,7 +95,26 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadCinCoutFile();
     std::cout << "\n" << separator << std::endl;
-    runZadCandCPP();
+    std::cout << "*runZadCandCPP() here*";
+    //runZadCandCPP();
+    std::cout << "\n" << separator << std::endl;
+    runZadTabelaFormat();
+    std::cout << "\n" << separator << std::endl;
+    runZadTemperaturaFormat();
+    std::cout << "\n" << separator << std::endl;
+    runZadDaneNaukoweFormat();
+    std::cout << "\n" << separator << std::endl;
+    runZadParzysta();
+    std::cout << "\n" << separator << std::endl;
+    //runZadParzystaCase();
+    std::cout << "*runZadParzystaCase() here*";
+    std::cout << "\n" << separator << std::endl;
+    runZadPetle();
+    std::cout << "\n" << separator << std::endl;
+    //runZadSwitch();
+    std::cout << "*runZadSwtich() here*";
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
