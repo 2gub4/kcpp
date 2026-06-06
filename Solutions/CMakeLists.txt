@@ -40,6 +40,12 @@ set(HEADERS
         include/zadania-operacje-wejscia-wyjscia/ZadParzystaCase.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadPetle.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadSwitch.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadForA.hpp
+        include/zadania-operacje-wejscia-wyjscia/LSilnia.hpp
+        include/zadania-operacje-wejscia-wyjscia/LKsztalt.hpp
+        include/zadania-operacje-wejscia-wyjscia/LGra.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp
+        include/zadania-operacje-wejscia-wyjscia/LWhileA.hpp
 )
 
 set(SOURCES
@@ -81,6 +87,12 @@ set(SOURCES
         src/zadania-operacje-wejscia-wyjscia/ZadParzystaCase.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadPetle.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadSwitch.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadForA.cpp
+        src/zadania-operacje-wejscia-wyjscia/LSilnia.cpp
+        src/zadania-operacje-wejscia-wyjscia/LKsztalt.cpp
+        src/zadania-operacje-wejscia-wyjscia/LGra.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.cpp
+        src/zadania-operacje-wejscia-wyjscia/LWhileA.cpp
 )
 
 

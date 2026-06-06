@@ -37,7 +37,15 @@
 #include "zadania-operacje-wejscia-wyjscia/ZadParzysta.hpp"
 //#include "zadania-operacje-wejscia-wyjscia/ZadParzystaCase.hpp"
 #include "zadania-operacje-wejscia-wyjscia/ZadPetle.hpp"
-#include "zadania-operacje-wejscia-wyjscia/ZadSwitch.hpp"
+//#include "zadania-operacje-wejscia-wyjscia/ZadSwitch.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadForA.hpp"
+#include "zadania-operacje-wejscia-wyjscia/LSilnia.hpp"
+#include "zadania-operacje-wejscia-wyjscia/LKsztalt.hpp"
+// #include "zadania-operacje-wejscia-wyjscia/LWhileA.hpp"
+// #include "zadania-operacje-wejscia-wyjscia/LGra.hpp"
+// #include "zadania-operacje-wejscia-wyjscia/ZadStudent.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp"
+
 
 const auto main_separator = std::string(90, '=');
 const auto separator = std::string(90, '-');
@@ -113,6 +121,26 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     //runZadSwitch();
     std::cout << "*runZadSwtich() here*";
+    std::cout << "\n" << separator << std::endl;
+    runZadForA();
+    std::cout << "\n" << separator << std::endl;
+    runZadSilnia();
+    std::cout << "\n" << separator << std::endl;
+    runZadKsztalt();
+    std::cout << "\n" << separator << std::endl;
+    std::cout << "*runZadWhileA() here*";
+    //runZadWhileA();
+    std::cout << "\n" << separator << std::endl;
+    std::cout << "*runLGra() here*";
+    //runZadGra();
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+    runZadPreprocesor();
+    std::cout << "\n" << separator << std::endl;
+
+    std::cout << "\n" << separator << std::endl;
+
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
