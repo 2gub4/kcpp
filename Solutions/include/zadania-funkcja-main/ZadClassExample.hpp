@@ -4,9 +4,9 @@ class Car {
     public:
         Car();
         ~Car();
-        Car(std::string brand);
-        Car(std::string brand, std::string model);
-        Car(std::string brand, std::string model, int procuction_year);
+        explicit Car(const std::string& brand);
+        Car(const std::string& brand, const std::string& model);
+        Car(const std::string& brand, const std::string& model, int procuction_year);
 
         std::string brand_name;
         std::string cars_model;
@@ -20,7 +20,7 @@ class Car {
         std::string to_string();
 
     private:
-        std::string set_vin(long long fake_numeric_vin);
+        static std::string set_vin(long long fake_numeric_vin);
         std::string VIN;
 };
 
@@ -28,14 +28,14 @@ class Car {
 class OwnedCar : public Car {
     public:
         OwnedCar();
-        OwnedCar(std::string brand, std::string model, std::string license_plate);
-        OwnedCar(std::string brand, std::string model, int production_year, std::string license_plate, int years_owned, int mileage);
+        OwnedCar(const std::string& brand, const std::string& model, std::string  license_plate);
+        OwnedCar(const std::string& brand, const std::string& model, int production_year, std::string  license_plate, int years_owned, int mileage);
 
         std::string license_plate;
         int years_owned;
         int mileage;
 
-        void set_owner(std::string owner);
+        void set_owner(const std::string& owner);
         std::string get_owner();
 
         std::string to_string();

@@ -4,10 +4,11 @@
 
 #include <iostream>
 #include <format>
+#include <utility>
 #include "zadania-funkcja-main/ZadClassExample.hpp"
 
-const int currentYear = 2026;
-const long long fake_vin = 10000000000000000;
+constexpr int currentYear = 2026;
+constexpr long long fake_vin = 10000000000000000;
 
 int Car::car_instances = 0;
 const float OwnedCar::mile_multiplier = 1.609333;
@@ -19,7 +20,7 @@ Car::Car() : brand_name("unknown"), cars_model("01"), year_of_production(current
     std::cout << "***Car instance created***\n";
 }
 
-Car::Car(std::string brand) :
+Car::Car(const std::string& brand) :
     cars_model("unknown"),
     year_of_production(currentYear)
 {
@@ -30,7 +31,7 @@ Car::Car(std::string brand) :
 
 Car::~Car() { std::cout << "***Car instance destroyed***\n"; }
 
-Car::Car(std::string brand, std::string model) :
+Car::Car(const std::string& brand, const std::string& model) :
     year_of_production(currentYear)
 {
     ++car_instances;
@@ -39,7 +40,7 @@ Car::Car(std::string brand, std::string model) :
     VIN = set_vin(fake_vin + car_instances);
 }
 
-Car::Car(std::string brand, std::string model, int procuction_year)
+Car::Car(const std::string& brand, const std::string& model, int procuction_year)
 {
     ++car_instances;
     brand_name = brand;
@@ -48,7 +49,8 @@ Car::Car(std::string brand, std::string model, int procuction_year)
     VIN = set_vin(fake_vin + car_instances);
 }
 
-std::string Car::set_vin(long long fake_numeric_vin) {
+auto Car::set_vin(long long fake_numeric_vin) -> std::string
+{
     return std::to_string(fake_numeric_vin);
 }
 
@@ -66,16 +68,16 @@ std::string Car::to_string() {
 
 OwnedCar::OwnedCar() : Car(), years_owned(0), mileage(0) {}
 
-OwnedCar::OwnedCar(std::string brand, std::string model, std::string license_plate) :
+OwnedCar::OwnedCar(const std::string& brand, const std::string& model, std::string  license_plate) :
     Car(brand, model),
-    license_plate(license_plate),
+    license_plate(std::move(license_plate)),
     years_owned(0),
     mileage(0)
 { }
 
-OwnedCar::OwnedCar(std::string brand, std::string model, int production_year, std::string license_plate, int years_owned, int mileage) :
+OwnedCar::OwnedCar(const std::string& brand, const std::string& model, const int production_year, std::string  license_plate, int years_owned, int mileage) :
     Car(brand, model, production_year),
-    license_plate(license_plate),
+    license_plate(std::move(license_plate)),
     years_owned(years_owned),
     mileage(mileage)
 { }
@@ -86,11 +88,11 @@ std::string OwnedCar::get_owner() {
     return owners_name;
 }
 
-void OwnedCar::set_owner(std::string owner) {
+void OwnedCar::set_owner(const std::string& owner) {
     this->owners_name = owner;
 }
 
-float OwnedCar::miles_to_kilometers(int miles) {
+float OwnedCar::miles_to_kilometers(const int miles) {
     return  static_cast<float>(miles) * mile_multiplier;
 }
 

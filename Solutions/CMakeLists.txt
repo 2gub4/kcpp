@@ -46,6 +46,7 @@ set(HEADERS
         include/zadania-operacje-wejscia-wyjscia/LGra.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp
         include/zadania-operacje-wejscia-wyjscia/LWhileA.hpp
+        include/zadania-operacje-wejscia-wyjscia/ZadStudent.hpp
 )
 
 set(SOURCES
@@ -93,6 +94,7 @@ set(SOURCES
         src/zadania-operacje-wejscia-wyjscia/LGra.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.cpp
         src/zadania-operacje-wejscia-wyjscia/LWhileA.cpp
+        src/zadania-operacje-wejscia-wyjscia/ZadStudent.cpp
 )
 
 

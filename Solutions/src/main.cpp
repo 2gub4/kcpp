@@ -43,7 +43,7 @@
 #include "zadania-operacje-wejscia-wyjscia/LKsztalt.hpp"
 // #include "zadania-operacje-wejscia-wyjscia/LWhileA.hpp"
 // #include "zadania-operacje-wejscia-wyjscia/LGra.hpp"
-// #include "zadania-operacje-wejscia-wyjscia/ZadStudent.hpp"
+#include "zadania-operacje-wejscia-wyjscia/ZadStudent.hpp"
 #include "zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp"
 
 
@@ -134,7 +134,7 @@ int main() {
     std::cout << "*runLGra() here*";
     //runZadGra();
     std::cout << "\n" << separator << std::endl;
-
+    runZadStudent();
     std::cout << "\n" << separator << std::endl;
     runZadPreprocesor();
     std::cout << "\n" << separator << std::endl;
