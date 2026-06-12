@@ -6,8 +6,6 @@
 #include <iostream>
 #include <sstream>
 
-// Dodaj walidację danych (np. sprawdzanie, czy imię nie jest puste lub czy numer indeksu jest unikalny).
-
 StudentDb::StudentDb()
 {
     students = std::vector<Student>();

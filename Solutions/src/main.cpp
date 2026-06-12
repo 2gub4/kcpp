@@ -46,9 +46,17 @@
 #include "zadania-operacje-wejscia-wyjscia/ZadStudent.hpp"
 #include "zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp"
 
+#include "zadania-klasy/ZadClass.hpp"
+#include "zadania-klasy/ZadStruct.hpp"
+#include "zadania-klasy/ZadUnia.hpp"
+#include "zadania-klasy/ZadKlasaKonstruktor.hpp"
+#include "zadania-klasy/ZadStructKonstruktor.hpp"
+#include "zadania-klasy/ZadPrzyjazn.hpp"
+#include "zadania-klasy/ZadMetodyAbstrakcyjne.hpp"
 
-const auto main_separator = std::string(90, '=');
-const auto separator = std::string(90, '-');
+
+const auto main_separator = std::string(100, '=');
+const auto separator = std::string(100, '-');
 
 int main() {
     std::cout << "\n" << main_separator << "\n" << std::endl;
@@ -138,15 +146,22 @@ int main() {
     std::cout << "\n" << separator << std::endl;
     runZadPreprocesor();
     std::cout << "\n" << separator << std::endl;
-
+    runZadClass();
+    std::cout << "\n" << separator << std::endl;
+    runZadStruct();
+    std::cout << "\n" << separator << std::endl;
+    runZadUnia();
+    std::cout << "\n" << separator << std::endl;
+    runZadKlasaKonstruktor();
+    std::cout << "\n" << separator << std::endl;
+    runZadStructKonstruktor();
+    std::cout << "\n" << separator << std::endl;
+    runZadPrzyjazn();
+    std::cout << "\n" << separator << std::endl;
+    runZadMetodyAbstrakcyjne();
     std::cout << "\n" << separator << std::endl;
 
     std::cout << "\n" << separator << std::endl;
-
-    std::cout << "\n" << separator << std::endl;
-
-    std::cout << "\n" << separator << std::endl;
-
     std::cout << "\n" << separator << std::endl;
     std::cout << "\n" << main_separator << "\n" << std::endl;
     return 0;

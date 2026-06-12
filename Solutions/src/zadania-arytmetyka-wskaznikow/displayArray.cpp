@@ -1,7 +1,3 @@
-//
-// Created by Jakub on 15.05.2026.
-//
-
 #include <string>
 
 std::string displayArray(const int* arr, const int size)

@@ -47,6 +47,13 @@ set(HEADERS
         include/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.hpp
         include/zadania-operacje-wejscia-wyjscia/LWhileA.hpp
         include/zadania-operacje-wejscia-wyjscia/ZadStudent.hpp
+        include/zadania-klasy/ZadClass.hpp
+        include/zadania-klasy/ZadStruct.hpp
+        include/zadania-klasy/ZadUnia.hpp
+        include/zadania-klasy/ZadKlasaKonstruktor.hpp
+        include/zadania-klasy/ZadStructKonstruktor.hpp
+        include/zadania-klasy/ZadPrzyjazn.hpp
+        include/zadania-klasy/ZadMetodyAbstrakcyjne.hpp
 )
 
 set(SOURCES
@@ -95,6 +102,13 @@ set(SOURCES
         src/zadania-operacje-wejscia-wyjscia/ZadPreprocesor.cpp
         src/zadania-operacje-wejscia-wyjscia/LWhileA.cpp
         src/zadania-operacje-wejscia-wyjscia/ZadStudent.cpp
+        src/zadania-klasy/ZadClass.cpp
+        src/zadania-klasy/ZadStruct.cpp
+        src/zadania-klasy/ZadUnia.cpp
+        src/zadania-klasy/ZadKlasaKonstruktor.cpp
+        src/zadania-klasy/ZadStructKonstruktor.cpp
+        src/zadania-klasy/ZadPrzyjazn.cpp
+        src/zadania-klasy/ZadMetodyAbstrakcyjne.cpp
 )
 
 
