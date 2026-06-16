@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "includes.hpp"
 #include "Section.hpp"
@@ -9,6 +10,16 @@
 const auto main_separator = std::string(100, '=');
 const auto separator = std::string(100, '-');
 const auto hash_separator = std::string(100, '#');
+
+void printAvailableSections(const std::vector<Section*>& sections)
+{
+    std::cout << "Dostępne sekcje: \n";
+    for (const auto& section : sections)
+    {
+        std::cout << " [" << section->getNumber() << "] - " << section->getSectionName() << "\n";
+    }
+    std::cout << "\n [0] - Zakończ." << std::endl;
+}
 
 int main()
 {
@@ -420,6 +431,9 @@ int main()
         )
     );
 
+    const std::vector sections{ &zadaniaMain, &zadaniaFunkcje, &zadaniaWskazniki, &zadaniaIO, &zadaniaKlasy };
+
+    //Testowe printy dla każdego zadania wg każdej sekcji
 
     //SEKCJA 1
     // std::cout << "\n" << main_separator << "\n" << std::endl;
@@ -432,7 +446,7 @@ int main()
     // }
     // std::cout << "\n" << main_separator << "\n" << std::endl;
 
-    std::cout <<  hash_separator << "\n" << std::endl;
+    //std::cout <<  hash_separator << "\n" << std::endl;
 
     //SEKCJA 2
     // std::cout << "\n" << main_separator << "\n" << std::endl;
@@ -445,7 +459,7 @@ int main()
     // }
     // std::cout << "\n" << main_separator << "\n" << std::endl;
 
-    std::cout <<  hash_separator << "\n" << std::endl;
+    //std::cout <<  hash_separator << "\n" << std::endl;
 
     //SEKCJA 3
     // std::cout << "\n" << main_separator << "\n" << std::endl;
@@ -471,7 +485,7 @@ int main()
     // }
     // std::cout << "\n" << main_separator << "\n" << std::endl;
 
-    std::cout <<  hash_separator << "\n" << std::endl;
+    //std::cout <<  hash_separator << "\n" << std::endl;
 
     //SEKCJA 5
     // std::cout << "\n" << main_separator << "\n" << std::endl;
@@ -490,7 +504,7 @@ int main()
 
     int choice;
     do {
-        //wyświetlić opcje sekcji
+        printAvailableSections(sections);
         std::cout << "Wybierz numer sekcji zadań lub zakończ: ";
         std::cin >> choice;
         Section* targetSection;
