@@ -59,6 +59,9 @@ void inputOperations()
     std::cout << "Testing 'cin.get' and 'cin.unget'...\n";
     std::cin.get(znak);
     std::cin.unget();
+    std::cin >> std::skipws;
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
 void errorStreamingComparison()
