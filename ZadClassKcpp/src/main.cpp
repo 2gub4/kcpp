@@ -10,26 +10,6 @@ const auto main_separator = std::string(100, '=');
 const auto separator = std::string(100, '-');
 const auto hash_separator = std::string(100, '#');
 
-void mainInterfaceLoop()
-{
-    int choice;
-    do {
-        std::cin >> choice;
-        switch (choice)
-        {
-        case 1:
-            // zadaniaMain.execute();
-            std::cout << "Zadania main" << std::endl;
-            break;
-        default:
-            std::cout << "not implemented yet" << std::endl;
-            break;
-        }
-    }
-    while (choice != 0);
-    std::cout << "Zakończono działanie programu." << std::endl;
-}
-
 int main()
 {
     SetConsoleOutputCP(CP_UTF8);
@@ -85,7 +65,7 @@ int main()
             1,
             "ZadZwracanie.cc",
             runZadZwracanie,
-            "Zwracanie wartości z funkcji przez wartość, referencję, wskaźnik oraz tablicę."
+            "Zwracanie wartości z funkcji przez wartość, referencję, wskaźnik."
         )
     );
     zadaniaFunkcje.addExercise(
@@ -93,7 +73,7 @@ int main()
             2,
             "ZadPrzeciazaniePole.cc",
             runZadPrzeciazeniePole,
-            "Przeciążanie funkcji (function overloading) na przykładzie obliczania pola figur."
+            "Przeciążanie funkcji na przykładzie obliczania pola figur."
         )
     );
     zadaniaFunkcje.addExercise(
@@ -130,7 +110,7 @@ int main()
             1,
             "ZadArytmetykaWskaznikowZamiana.cc",
             runZadArytmetykaWskaznokowZamiana,
-            "Modyfikacja pamięci i zamiana wartości zmiennych (swap) z użyciem wskaźników."
+            "Modyfikacja pamięci i zamiana wartości zmiennych z użyciem wskaźników."
         )
     );
     zadaniaWskazniki.addExercise(
@@ -372,7 +352,7 @@ int main()
     );
     zadaniaIO.addExercise(
         Exercise(
-            17,
+            18,
             "ZadPreprocesor.cc",
             runZadPreprocesor,
             "Sterowanie procesem kompilacji za pomocą dyrektyw preprocesora (#define, #ifdef)."
@@ -506,6 +486,66 @@ int main()
     //
     // std::cout <<  hash_separator << "\n" << std::endl;
 
-    mainInterfaceLoop();
+    //mainInterfaceLoop();
+
+    int choice;
+    do {
+        //wyświetlić opcje sekcji
+        std::cout << "Wybierz numer sekcji zadań lub zakończ: ";
+        std::cin >> choice;
+        Section* targetSection;
+        switch (choice)
+        {
+        case 0:
+            targetSection = nullptr;
+            break;
+        case 1:
+            targetSection = &zadaniaMain;
+            break;
+        case 2:
+            targetSection = &zadaniaFunkcje;
+            break;
+        case 3:
+            targetSection = &zadaniaWskazniki;
+            break;
+        case 4:
+            targetSection = &zadaniaIO;
+            break;
+        case 5:
+            targetSection = &zadaniaKlasy;
+            break;
+        default:
+            targetSection = nullptr;
+            std::cout << "Nie ma sekcji o takim numerze" << std::endl;
+            break;
+        }
+        if (targetSection != nullptr)
+        {
+            int exchoice;
+            Exercise* targetExercise;
+            do {
+                targetSection->execute();
+                std::cout << "Liczba zadań w sekcji docelowej: " << targetSection->numberOfExercises << std::endl;
+                std::cout << "Wybierz numer zadania spośród dostępnych lub porwróć do wyboru sekcji: ";
+                std::cin >> exchoice;
+                std::cout << std::endl;
+                if (exchoice > targetSection->numberOfExercises)
+                {
+                    targetSection = nullptr;
+                    std::cout << "Nie ma zadania o takim numerze" << std::endl;
+                }
+                else if (targetExercise)
+                {
+                    std::cout << separator << "\n";
+                    targetExercise = &targetSection->exercises.at(exchoice - 1);
+                    targetExercise->execute();
+                    std::cout << separator << std::endl;
+                }
+                else break;
+            } while (exchoice != 0);
+        }
+    }
+    while (choice != 0);
+    std::cout << "Zakończono działanie programu." << std::endl;
     return 0;
 }
