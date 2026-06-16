@@ -68,8 +68,7 @@ int main()
         )
     );
     auto zadaniaFunkcje = Section(2, "Zadania Zwracanie Przez Funkcje",
-        "Zadania poświęcone funkcjom, ich charakterystykom i sposobom zwracania wartości.",
-        5
+        "Zadania poświęcone funkcjom, ich charakterystykom i sposobom zwracania wartości."
     );
     zadaniaFunkcje.addExercise(
         Exercise(
@@ -113,8 +112,7 @@ int main()
     );
     auto zadaniaWskazniki = Section(3, "Zadania Arytmetyka Wskaźników",
         "Zadania poświęcone wskaźnikom, pokazujące do czego służą, jakie są ich rodzaje i "
-        "jak wykorzystywać je w praktyce (szczególnie na przykładach z tablicami)",
-        13
+        "jak wykorzystywać je w praktyce (szczególnie na przykładach z tablicami)"
     );
     zadaniaWskazniki.addExercise(
         Exercise(
@@ -222,8 +220,7 @@ int main()
     );
     auto zadaniaIO = Section(4, "Zadania IO", "Zadania poświęcone "
         "wprowadzaniu danych i wyświetlaniu ich w konsoli, głównie z użyciem bibliotek iostream, iomanio oraz sstream"
-        " celem nauki formatowania strumieni wejścia i wyjścia.",
-        18
+        " celem nauki formatowania strumieni wejścia i wyjścia."
     );
     zadaniaIO.addExercise(
         Exercise(
@@ -371,8 +368,7 @@ int main()
     );
     auto zadaniaKlasy = Section(5, "Zadania Klasy", "Zadania poświęcone "
         "pracy z klasami i ich odmianami, czyli 'union' i 'struct', dotykające tematyki programowania obiektowego, a "
-        " w tym dziedziczenia, polimorfizmu i hermetyczności.",
-        6
+        " w tym dziedziczenia, polimorfizmu i hermetyczności."
     );
     zadaniaKlasy.addExercise(
         Exercise(
@@ -529,33 +525,34 @@ int main()
             targetSection = &zadaniaKlasy;
             break;
         default:
+            if (choice < 0 || choice > 5) std::cout << "Nie ma sekcji o takim numerze" << std::endl;
+            else std::cout << "Wprowadzono nieprawidłowy znak";
             targetSection = nullptr;
-            std::cout << "Nie ma sekcji o takim numerze" << std::endl;
             break;
         }
         if (targetSection != nullptr)
         {
             int exchoice;
-            Exercise* targetExercise;
             do {
                 targetSection->execute();
-                std::cout << "Liczba zadań w sekcji docelowej: " << targetSection->numberOfExercises << std::endl;
-                std::cout << "Wybierz numer zadania spośród dostępnych lub porwróć do wyboru sekcji: ";
+                std::cout << "Wybierz numer zadania spośród dostępnych lub powróć do wyboru sekcji (0): ";
                 std::cin >> exchoice;
                 std::cout << std::endl;
-                if (exchoice > targetSection->numberOfExercises)
-                {
-                    targetSection = nullptr;
-                    std::cout << "Nie ma zadania o takim numerze" << std::endl;
+                if (std::cin.fail()) {
+                    std::cin.clear();
+                    std::cin.sync();
                 }
-                else if (targetExercise)
+                if (exchoice > targetSection->exercises.size() || exchoice < 0)
+                {
+                    std::cout << "Nie ma zadania o takim numerze\n\n" << std::endl;
+                }
+                else if (exchoice > 0)
                 {
                     std::cout << separator << "\n";
-                    targetExercise = &targetSection->exercises.at(exchoice - 1);
+                    Exercise* targetExercise = &targetSection->exercises.at(exchoice - 1);
                     targetExercise->execute();
-                    std::cout << separator << std::endl;
+                    std::cout << separator << "\n" << std::endl;
                 }
-                else break;
             } while (exchoice != 0);
         }
     }

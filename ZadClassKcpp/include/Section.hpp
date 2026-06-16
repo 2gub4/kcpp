@@ -8,9 +8,7 @@
 
 class Section : public TemplateKcpp {
 public:
-    Section(int sectionNumber, const std::string& sectionName, const std::string& sectionDescription);
-    Section(int sectionNumber, std::string  sectionName, const std::string& sectionDescription, int numberOfExercises);
-    int numberOfExercises;
+    Section(int sectionNumber, std::string  sectionName, const std::string& sectionDescription);
     std::string sectionName;
     [[nodiscard]] std::string getSectionName() const { return this->sectionName; }
     std::vector<Exercise> exercises{};

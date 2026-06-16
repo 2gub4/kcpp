@@ -5,21 +5,16 @@
 #include "ZadKccp.hpp"
 #include "Section.hpp"
 
-Section::Section(const int sectionNumber, const std::string& sectionName, const std::string& sectionDescription) : TemplateKcpp(sectionNumber, sectionDescription)
+Section::Section(const int sectionNumber, std::string  sectionName, const std::string& sectionDescription) : TemplateKcpp(sectionNumber, sectionDescription), sectionName(std::move(sectionName))
 {
-    numberOfExercises = 0;
     exercises.reserve(20);
 }
-
-Section::Section(const int sectionNumber, std::string  sectionName, const std::string& sectionDescription, const int numberOfExercises)
-: TemplateKcpp(sectionNumber, sectionDescription), numberOfExercises(numberOfExercises), sectionName(std::move(sectionName))
-{ exercises.reserve(numberOfExercises); }
 
 std::string Section::getDescription() const { return this->description; }
 
 int Section::getNumber() const { return this->number; }
 
-int Section::getNumberOfExercises() const { return static_cast<int>(this->exercises.size())/*numberOfExercises*/; }
+int Section::getNumberOfExercises() const { return static_cast<int>(this->exercises.size()); }
 
 Exercise Section::getExercise(const int exerciseNumber) { return this->exercises[exerciseNumber-1]; }
 
@@ -34,10 +29,9 @@ void Section::execute() const {
     }
     std::cout << "\n [0] - Zakończ." << std::endl;
     std::cout << "________________________________\n";
-} //dodać iomanip
+}
 
 void Section::addExercise(const Exercise& exercise)
 {
     this->exercises.push_back(exercise);
-    this->numberOfExercises++;
 }
